@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" type="module"></script>
+</head>
+<style>
+    /* 1. animation css */
+    /* body {
+        display:flex;
+        flex-direction: row;
+    }
+
+     /* 2 animation with INject observer */
+    /* body {
+  margin: 0;
+  min-height: 200vh;
+  font-family: sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 10vw;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* styles for parellex effect */
+
+/* body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.spacer {
+  height: 120vh;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+.parallax-bg {
+  position: absolute;
+  inset: -20%;
+  background-image: url("https://picsum.photos/1600/900");
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 10vw;
+  font-size: 3rem;
+} */
+
+.horizontal {
+  height: 400vh;
+  position: relative;
+}
+
+.horizontal-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden; /* critical */
+}
+
+.horizontal-inner {
+  display: flex;
+  height: 100vh;
+  will-change: transform;
+}
+
+.panel {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: #111;
+  color: white;
+}
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+    <!-- 1. this is for the animating the text from left to right -->
+    <!-- <p id="para">How the josh</p> -->
+
+
+    <!-- 2 animation with INject observer -->
+
+<!-- <section class="section reveal">
+  <h2>Our Work</h2>
+  <p>
+    We create immersive digital experiences that blend design and motion.
+  </p>
+</section>
+
+<section class="section reveal">
+  <h2>Our Process</h2>
+  <p>
+    Motion-first thinking, performance-focused execution.
+  </p>
+</section> -->
+
+
+<!-- 3. animation with parellex effect      -->
+<!-- <div class="spacer"></div>
+
+<section class="parallax">
+  <div class="parallax-bg"></div>
+
+  <div class="parallax-content">
+    <h2>Immersive Experiences</h2>
+    <p>Scroll to see parallax motion</p>
+  </div>
+</section>
+
+<div class="spacer"></div> -->
+
+<!-- 4. animation with vertical scroll moves page horizentally -->
+<section class="horizontal">
+  <div class="horizontal-sticky">
+    <div class="horizontal-inner">
+      <div class="panel">One</div>
+      <div class="panel">Two</div>
+      <div class="panel">Three</div>
+      <div class="panel">Four</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Read how browsers render pages -->
+ <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work -->
+
+
+
+    
+
+
+</body>
+</html>
